@@ -16,6 +16,22 @@
     #main {margin-left: 120px}
     /* Remove margins from "page content" on small screens */
     @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+      
+      /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+    
     </style>
   </head>
 <body class="w3-#cccccc">      <!-- 这是一个单行注释：主题背景颜色改为浅灰#ccccc -->
@@ -82,7 +98,7 @@
 
   <!-- Short CV Section -->
  
- <div class="w3-padding-64 w3-content"" id="short CV">
+ <div class="w3-padding-64 w3-content" id="short CV">
     
 
   <h2 class="w3-text-blue">Experience</h2>
@@ -129,7 +145,7 @@
   
   <!-- Resarch Section -->
   
-      <div class="w3-padding-64 w3-content"" id="Research">
+      <div class="w3-padding-64 w3-content" id="Research">
     <h2 class="w3-text-blue">Research</h2> 
      <hr style="width:200px" class="w3-opacity-min">
    
@@ -343,7 +359,7 @@ Wei Liu, Jinbao Yang, Yu Sun, <u><strong>Xiaolin Liu</strong></u>, Yan Li, Zhenp
 
 
   <!-- Tools Section -->
-<div class="w3-padding-64 w3-content"" id="Tools">
+<div class="w3-padding-64 w3-content" id="Tools">
     <h2 class="w3-text-blue">Tools</h2> 
      <hr style="width:200px" class="w3-opacity-min">
                                                    
@@ -442,31 +458,29 @@ Wei Liu, Jinbao Yang, Yu Sun, <u><strong>Xiaolin Liu</strong></u>, Yan Li, Zhenp
   <!-- Contact Section -->
   
 
- <div class="w3-padding-64 w3-content"" id="contact">
+ <div class="w3-padding-64 w3-content" id="contact">
     <h2 class="w3-text-blue">Contact</h2> 
      <hr style="width:200px" class="w3-opacity-min">
 
 
 
-    <div class="w3-section">
+    <div class="w3-section row column">
       <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> California, US</p>
       <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Email: xliu241@ucsc.edu</p>
       <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Email: liuxiaolin215@mails.ucas.ac.cn</p>
-    </div><br>
+    </div><be> </div>
     
-
-
+   <a>
+    <img src="/page/biochemotaxis.jpg" alt="Biochemotaxis" width="600" height="400">
+  </a>
   
   <!-- End Contact Section -->
   </div>
 
 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-  
-
-  
-  
- <p class="w3-small w3-text-black">
+ <div class="row column" id='main'>
+   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+   <p class="w3-small w3-text-black">
    This page has been accessed at least
 <a href="https://xliu241.github.io/#"><img src="http://stuff.mit.edu/cgi/counter/xliu241" alt="several"></a>
 times since Aug 31, 2022. 
